@@ -1,0 +1,254 @@
+/*NAVBAR CSS*/
+body{
+	background-color:#3b3a36;
+	background-image: url("images/robbyedark.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	font-family: 'Inconsolata', monospace;
+}
+
+#dropdown1,#dropdown2{
+	width:auto !important;
+	height:auto !important;
+	background-color: #4e342e;
+}
+.dropdown-content li>a, .dropdown-content li>span{
+	color:#e3e3e3;
+}
+
+#home-base{
+	margin-top: 0px;
+/*	background-color:#2268d8;*/
+}
+.sidenav-overlay{
+	    background-color: rgba(0,0,0,0);
+	    position: relative;
+}
+.navbar-fixed{
+	height: 60vh;
+}
+nav ul.left{
+	text-shadow: 1px 1px black;
+}
+nav ul a:hover{
+	background-color: rgba(0,0,0,0.4);
+}
+.navbar-fixed nav{
+	background-color:transparent;
+	position: relative;
+}
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .sidenav{
+	box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0px rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0);
+}
+.btn, .btn-large{
+	background-color: #4e342e;
+}
+.btn:hover, .btn-large:hover{
+	background-color: #4e342e;
+}
+
+@media only screen and (max-width: 501px){
+	nav .brand-logo{
+		font-size:1.8rem;
+	}
+}
+@media only screen and (max-width: 431px){
+	nav .brand-logo{
+		font-size:1.4rem;
+	}
+}
+
+/*OPENING MENU CSS*/
+
+.intro-txt{
+	margin-top: 2%;
+	text-align: center;
+	text-shadow: 2px 2px black;
+}
+.m-buttons{
+	text-align: center;
+}
+#menu-img{
+  height: 30vh;
+}
+.image-text{
+	text-align: center;
+	margin-top: 15%;
+}
+
+/*SIDEBAR CSS*/
+.sidenav{
+  background-color: #e3e3e3;
+}
+
+#side-header{
+  margin-bottom: 4%
+}
+
+#menu-text{
+  text-align: center;
+  padding-bottom:8%;
+  font-size: 14px;
+    font-weight: 500;
+}
+h1,h2,h3,h4,h5,p,nav .brand-logo,#hamburger,.waves-effect.waves-light.btn-large{
+  color:#e3e3e3;
+}
+h1{
+	 margin: 0 1.68rem 0;
+}
+/*END SIDEBAR MENU CSS*/
+
+/*MY WORK CSS*/
+
+.tab-headings{
+	text-align: center;
+	margin-top: 15%;
+}
+#product-content{
+	margin-top:8%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.container.service{
+	width:40%;
+}
+.collection.service-items{
+	margin-top: 6%;
+}
+@media only screen and (max-width: 610px){
+	#menu-content{
+		flex-wrap: wrap;
+	}
+	.container.service{
+	width:70%;
+}
+}
+
+/*ABOUTME CSS*/
+
+#aboutme,#aboutme-content,.heading-content{
+	text-align: center;
+}
+#aboutme{
+	margin-top: 6%;
+}
+.circle.responsive-img{
+	max-width: 15%;
+}
+.aboutme-txt{
+	line-height: 2.0rem;
+	margin-top: 5%;
+    text-shadow: 1px 1px black;
+    font-size: 1.1rem;
+}
+.brand-logo.right{
+	    text-shadow: 1px 1px black;
+}
+
+/*Responsive img and work*/
+
+img.responsive-img, video.responsive-video{
+	max-width: 40%;
+	height: auto;
+}
+img.responsive-img-right, video.responsive-video{
+	max-width: 40%;
+	height: auto;
+	margin-left: 15%
+}
+
+#project-container{
+	margin-top: 15%;
+}
+
+.project-image{
+	    margin-left: 6%;
+	    margin-bottom: 5%;
+}
+
+/*ANIMATIONS*/
+
+@-webkit-keyframes slide {
+ 0% {transform: translateX(-205%);}
+ 25%{transform: translateX(0%);}
+/* 50%{transform: translateX(-20%);}
+ 100%{transform: translateX(0%);}*/
+}
+
+.transform-active{
+-webkit-animation:slide;
+ -webkit-animation-name: slide;
+ -webkit-animation-duration: 4s;
+/* -webkit-animation-iteration-count: 10;*/
+ -webkit-animation-direction: alternate;
+}
+.transform{
+	transform: translateX(-205%);
+}
+.top-img,.bottom-img{
+	display: inline;
+}
+
+.top-img, .bottom-img {
+  position: relative;
+}
+/*Services*/
+
+i.large.material-icons{
+	font-size: 99px;
+	margin:40px;
+}
+.service-text,.service-card{
+	margin-top: 5%;
+}
+
+/*STORY*/
+
+#build-btns{
+	margin-top: 5%;
+}
+#directions{
+	text-align: center;
+	line-height: 2.5;
+	width: 50%;
+	margin-left: 25%;
+}
+#story-form{
+	/*background-color: black;*/
+}
+.modal-overlay{
+	opacity: 0 !important;
+	position: relative;
+}
+#sc-container{
+	display: flex;
+	flex-direction: row;
+	margin-top: 10%;
+}
+.service-card{
+	margin: 1%;
+	background-color: #4e342e;
+	text-align: center;
+}
+.service-description{
+	line-height: 2.0;
+}
+.modal-content{
+	background-color: #4e342e;
+}
+.modal .modal-footer{
+	background-color: #4e342e;
+}
+.submit{
+	color:#E3E3E3;
+}
+.contact-info{
+	line-height: 1.5;
+}
+#contact-me{
+	margin-top: -20px;
+}

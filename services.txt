@@ -1,0 +1,74 @@
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo right">Designs by Jannetti</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger button-collapse"><i id="hamburger" class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="buildstory.html">Build Your Story</a></li>
+                    <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Contact Me</a>
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!">Email: Jjjannettski@gmail.com</a></li>
+                            <li><a href="#!">Phone: 347-982-3244</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sidenav" id="mobile-demo">
+                    <div id="directory">
+                        <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+                        <li><a href="aboutme.html"><i class="material-icons">person_add</i>About Me</a></li>
+                        <li><a href="buildstory.html"><i class="material-icons">build</i>Build Your Story</a></li>
+                        <li><a href="services.html"><i class="material-icons">touch_app</i>Services</a></li>
+                        <li><a href="#"><i class="material-icons">whatshot</i>Contact Me</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div id="sc-container" class="container">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="large material-icons">account_circle</i>
+                    </div>
+                    <div class="service-text">
+                        <h6>Professional Personal/Portfolio Website</h6>
+                        <p class="service-description"></p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="large material-icons">attach_money</i>
+                    </div>
+                    <div class="service-text">
+                        <h6>Business/E-commerce Website</h6>
+                        <p class="service-description">A sleek,functional, and responsive business website will strengthen your brand</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="large material-icons">extension</i>
+                    </div>
+                    <div class="service-text">
+                        <h6>Custom Web Applications</h6>
+                        <p class="service-description">I build custom web applications for any and all occasions whether it be for a business, your own leisure, or a gift to a loved one.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="large material-icons">brush</i>
+                    </div>
+                    <div class="service-text">
+                        <h6>UX/UI Design</h6>
+                        <p class="service-description"></p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="v2.js"></script>
+    <script type="text/javascript" src="animations.js"></script>
+</body>

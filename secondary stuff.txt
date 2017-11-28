@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio V2</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <body>
+
+      <div id="page-contents">
+        <div class="nav-wrapper">
+            <ul class="sidenav sidenav-fixed" id="mobile-demo">
+            <div id="side-header">
+                <img id="menu-img" class="circle responsive-img" src="images/profiletwo.jpg">
+                <div id="menu-text">
+                <h3>James Jannetti</h3>
+                <p>Front-End Developer</p><br>
+                <p>Designer</p>
+              </div>
+              </div>
+              <div id="directory">
+                <li><a href="#"><i class="material-icons">home</i>Home</a></li>
+                <li><a href="#"><i class="material-icons">person_add</i>About Me</a></li>
+                <li><a href="#"><i class="material-icons">perm_media</i>My Work</a></li>
+                <li><a href="#"><i class="material-icons">touch_app</i>Services</a></li>
+                <li><a href="#"><i class="material-icons">whatshot</i>The Product and Result</a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
+        <script type="text/javascript" src="v2.js"></script>
+    </body>
+
+</html>
+
+
+/*SIDEBAR MENU CSS*/
+
+#menu-img{
+  height: 30vh;
+  margin: 4% 0% 0% 11%;
+}
+
+.sidenav{
+  background-color: #e3e3e3;
+}
+
+#side-header{
+  background-color: #3b3a36;
+  margin-bottom: 4%
+}
+
+#menu-text{
+  text-align: center;
+  padding-bottom:8%;
+  font-size: 14px;
+    font-weight: 500;
+}
+h3, p{
+  color:#e3e3e3;
+}
+.nav-wrapper{
+  display: inline;
+}
+#right-contents{
+  text-align:right;
+  margin-left: 20%;
+  margin-right: 5%;
+}
+/*END SIDEBAR MENU CSS*/
+
+$( document ).ready(function() {
+//Opens the sidenav
+$('.sidenav').sidenav();
+$(".brand-logo").addClass("right");
+
+
+var win = $(this);
+      if (win.width() > 992){
+    $(".brand-logo").hide();
+      }else{
+        $('.brand-logo').removeClass('right');
+        $(".brand-logo").show();
+      }
+
+$(window).on('resize', function(){
+      var win = $(this);
+      if (win.width() > 992) { 
+      $(".brand-logo").hide();
+      $('.brand-logo').addClass('right');
+
+      }
+    else
+    {
+        $('.brand-logo').removeClass('right');
+        $(".brand-logo").show();
+    }
+});
+});

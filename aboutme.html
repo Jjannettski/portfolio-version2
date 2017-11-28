@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio V2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="aboutmebody">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo right">Designs by Jannetti</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger button-collapse"><i id="hamburger" class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a class='dropdown-trigger' href='#' data-target='dropdown2'>Services</a>
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown2' class='dropdown-content'>
+                            <li><a href="#!">Portfolio/Professional Websites</a></li>
+                            <li><a href="#!">Business/E-commerce Websites</a></li>
+                            <li><a href="#!">Custom Web Applications</a></li>
+                            <li><a href="#!">UX/UI Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="buildstory.html">Build Your Story (Website)</a></li>
+                    <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Contact Me</a>
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!">Email: Jjjannettski@gmail.com</a></li>
+                            <li><a href="#!">Phone: 347-982-3244</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sidenav" id="mobile-demo">
+                    <div id="directory">
+                        <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+                        <li><a href="aboutme.html"><i class="material-icons">person_add</i>About Me</a></li>
+                        <li><a href="buildstory.html"><i class="material-icons">build</i>Build Your Story/Website</a></li>
+                        <li><a href="#"><i class="material-icons">touch_app</i>Services</a></li>
+                        <li><a href="#"><i class="material-icons">whatshot</i>Contact Me</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="container">
+                <div id="aboutme-content">
+                    <div id="aboutme" class="tab-headings">
+                        <img class="circle responsive-img" src="images/profiletwo.jpg">
+                        <h4 style="text-shadow: 1px 1px black;">About Me: My Story</h4>
+                        <p class="aboutme-txt">
+                            I'm a Freelance Front-End Developer and Web Designer. My mission is to create sleek, functional, responsive websites/designs that achieve the ultimate goal of telling your story. I am available for hire.
+                        </p>
+                        <p class="aboutme-txt">
+                            I graduated from Baruch College with a Bachelor's in Corporate Communications with a minor in Psychology. From there, I entered the tech field when I began doing my graduate certification program at Rutgers University for Full-Stack Web Development.
+                        </p>
+                        <p class="aboutme-txt">
+                            I love exploring new cities, making new connections, forming lasting friendships, and trying new restaurants. In my spare time, I like to produce music (electronic) and play sports. I've played most sports you can think of, but hockey is my favorite. I'm also a die hard New York Ranger fan.
+                        </p>
+                        <p class="aboutme-txt">
+                            Now that i've told you my story, it's time to form yours.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </nav>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="v2.js"></script>
+    <script type="text/javascript" src="animations.js"></script>
+    </body>
+
+</html>

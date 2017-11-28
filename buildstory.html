@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio V2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="aboutmebody">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo right">Designs by Jannetti</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger button-collapse"><i id="hamburger" class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a class='dropdown-trigger' href='#' data-target='dropdown2'>Services</a>
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown2' class='dropdown-content'>
+                            <li><a href="#!">Portfolio/Professional Websites</a></li>
+                            <li><a href="#!">Business/E-commerce Websites</a></li>
+                            <li><a href="#!">Custom Web Applications</a></li>
+                            <li><a href="#!">UX/UI Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="buildstory.html">Build Your Story(Website)</a></li>
+                    <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Contact Me</a>
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!">Email: Jjjannettski@gmail.com</a></li>
+                            <li><a href="#!">Phone: 347-982-3244</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sidenav" id="mobile-demo">
+                    <div id="directory">
+                        <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+                        <li><a href="aboutme.html"><i class="material-icons">person_add</i>About Me</a></li>
+                        <li><a href="buildstory.html"><i class="material-icons">build</i>Build Your Story/Website</a></li>
+                        <li><a href="#"><i class="material-icons">touch_app</i>Services</a></li>
+                        <li><a href="#"><i class="material-icons">whatshot</i>Contact Me</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="container">
+                <div id="directions">
+                    <h3>You're Almost there!</h3>
+                    <p>Just one last step. For convenience purposes, it is recommended that you fill out the following personal form. Anything Marked with an asterisk is required.</p>
+                    <p>If you want to discuss hiring me for a temporary freelance position/project or a full-time position, Click the "hire me" button below</p>
+                </div>
+                <div id="build-btns" class="m-buttons">
+                    <a id="story-button" class="waves-effect waves-light btn-large modal-trigger" href="#modal1"><i class="material-icons left">card_travel</i>Build Your Story</a>
+                    <a id="work-button" class="waves-effect waves-light btn-large modal-trigger" href="#modal2"><i class="material-icons left">create</i>Hire Me</a>
+                </div>
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Story Builder</h4>
+                        <p>Fill Out the following form and I will be in touch with you asap!</p>
+                        <div class="row">
+                            <form id="story-form" class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input placeholder="John" id="first_name" type="text" class="validate">
+                                        <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input placeholder="Doe" id="last_name" type="text" class="validate">
+                                        <label for="last_name">Last Name</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input placeholder="Ex. Porfolio" id="typeofsite" type="text" class="validate">
+                                        <label for="last_name">Type of Website/App</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input placeholder="johndoe@gmail.com" id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input placeholder="718-888-888" id="email" type="email" class="validate">
+                                        <label for="email">Phone Number</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input placeholder="Put whatever you want" id="email" type="email" class="validate">
+                                        <label for="email">Additional Notes</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat submit">Submit</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat submit">Close</a>
+                    </div>
+                </div>
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <h4>Hire Me Form</h4>
+                        <div class="row">
+                            <form id="story-form" class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input placeholder="John" id="first_name" type="text" class="validate">
+                                        <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input placeholder="Doe" id="last_name" type="text" class="validate">
+                                        <label for="last_name">Last Name</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input placeholder="Ex. Temp" id="typeofsite" type="text" class="validate">
+                                        <label for="last_name">Employment</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input placeholder="johndoe@gmail.com" id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <div id="contact-me">
+                                <p>You can also contact me:</p>
+                                <ol>
+                                    <li class="contact-info">Phone: 347-982-3244</li>
+                                    <li class="contact-info">Email: jjannettski@gmail.com</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat submit">Submit</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat submit">Close</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="v2.js"></script>
+    <script type="text/javascript" src="animations.js"></script>
+</body>
+
+</html>

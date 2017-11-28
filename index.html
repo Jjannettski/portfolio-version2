@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio V2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo right">Designs by Jannetti</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger button-collapse"><i id="hamburger" class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a class='dropdown-trigger' href='#' data-target='dropdown2'>Services</a>
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown2' class='dropdown-content'>
+                            <li><a href="#!">Portfolio/Professional Websites</a></li>
+                            <li><a href="#!">Business/E-commerce Websites</a></li>
+                            <li><a href="#!">Custom Web Applications</a></li>
+                            <li><a href="#!">UX/UI Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="buildstory.html">Build Your Story (Website)</a></li>
+                    <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Contact Me</a>
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!">Email: Jjjannettski@gmail.com</a></li>
+                            <li><a href="#!">Phone: 347-982-3244</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sidenav" id="mobile-demo">
+                    <div id="directory">
+                        <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+                        <li><a href="aboutme.html"><i class="material-icons">person_add</i>About Me</a></li>
+                        <li><a href="buildstory.html"><i class="material-icons">build</i>Build Your Story/Website</a></li>
+                        <li><a href="#"><i class="material-icons">touch_app</i>Services</a></li>
+                        <li><a href="#"><i class="material-icons">whatshot</i>Contact Me</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div id="menu-content">
+                <div class="image-text">
+                    <h1 class="intro-txt">Hello, My Name is James!</h1>
+                    <h4 class="intro-txt">I'm a Front-End Developer/Designer</h4>
+                </div>
+                <div class="m-buttons">
+                    <a id="story-button" class="waves-effect waves-light btn-large modal-trigger" href="#modal1"><i class="material-icons left">card_travel</i>What I do</a>
+
+                    <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>What I do</h4>
+                        <div class="row">
+                            <ol>
+                                <li>Portfolio/Professional Websites</li>
+                                <li>Business/E-commerce Websites</li>
+                                <li>Custom Web Applications</li>
+                                <li>UX/UI Design</li>
+                                <li>Contact Info: <span>Phone: 347-982-3244 </span><span> Email: jjannettski@gmail.com</span></li>
+                            <ol>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat submit">Close</a>
+                    </div>
+                </div>
+
+                    <a id="work-button" class="waves-effect waves-light btn-large"><i class="material-icons left">create</i>View My Work</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="project-container" class="container">
+        <div class="row transform">
+            <div class="project-image">
+                <div class="top-img">
+                    <img class="responsive-img tooltipped" data-position="left" data-delay="50" data-tooltip="Hangman" src="images/hangmancopy.jpg">
+                </div>
+                <div class="bottom-img">
+                    <img class="responsive-img-right tooltipped" data-position="left" data-delay="50" data-tooltip="Beer Tinder" src="images/beertinderlogocopy.jpg">
+                </div>
+            </div>
+            <div class="project-image">
+                <div class="top-img">
+                    <img class="responsive-img tooltipped" data-position="left" data-delay="50" data-tooltip="Dragon Boss" src="images/dragonbosscopy.jpg">
+                </div>
+                <div class="bottom-img">
+                    <img class="responsive-img-right tooltipped" data-position="left" data-delay="50" data-tooltip="Giphy API" src="images/giphycopy.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="v2.js"></script>
+    <script type="text/javascript" src="animations.js"></script>
+</body>
+
+</html>

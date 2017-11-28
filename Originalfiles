@@ -1,0 +1,162 @@
+--------ORIGINAL HTML---------
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio V2</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">Designs by Jannetti</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger button-collapse"><i id="hamburger" class="material-icons">menu</i></a>
+                    <ul class="left hide-on-med-and-down">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">My Work</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">The Product and Result</a></li>
+                    </ul>
+                    <ul class="sidenav" id="mobile-demo">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">My Work</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">The Product and Result</a></li>
+                    </ul>
+                </div>
+                <div id="menu-content">
+                    <h1 id="intro">Hello, I'm James! A Front-End Developer.</h1>
+                    <div>
+                    <div class="m-buttons">
+                      <a class="waves-effect waves-light btn-large"><i class="material-icons left">card_travel</i>Let's Build Your Story</a>
+                      <a class="waves-effect waves-light btn-large"><i class="material-icons left">create</i>View My Work</a>
+                    </div>
+            </nav>
+            </div>
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
+            <script type="text/javascript" src="v2.js"></script>
+    </body>
+
+</html>
+
+--------END ORIGINAL HTML--------
+
+------ORIGINAL CSS---------
+
+/*NAVBAR CSS*/
+#home-base{
+	margin-top: 0px;
+	background-color:#2268d8;
+}
+.sidenav-overlay{
+	    background-color: rgba(0,0,0,0);
+	    position: relative;
+}
+.navbar-fixed{
+	height: 100vh;
+	background-image: url("images/Elijah Henderson @elijahhenderson.jpg");
+/*	background-color: #ee6e73;*/
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+nav ul.left{
+	text-shadow: 1px 1px black;
+}
+nav ul a:hover{
+	background-color: rgba(0,0,0,0.4);
+}
+.navbar-fixed nav{
+	background-color:transparent;
+	position: relative;
+}
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .sidenav{
+	box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0px rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0);
+}
+
+@media only screen and (max-width: 501px){
+	nav .brand-logo{
+		font-size:1.8rem;
+	}
+}
+@media only screen and (max-width: 431px){
+	nav .brand-logo{
+		font-size:1.4rem;
+	}
+}
+
+/*OPENING MENU CSS*/
+
+#intro{
+	margin-top: 14%;
+	text-align: center;
+}
+.m-buttons{
+	text-align: center;
+}
+h1{
+	filter: grayscale(0%);
+}
+#menu-content{
+	text-shadow: 1px 1px black;
+}
+
+------END ORIGINAL CSS..........
+
+-------ORIGINAL JS---------
+
+$( document ).ready(function() {
+//Opens the sidenav
+$('.sidenav').sidenav();
+$(".brand-logo").addClass("right");
+
+
+var win = $(this);
+      if (win.width() > 992){
+		$(".brand-logo").hide();
+      }else{
+      	$('.brand-logo').removeClass('right');
+      	$(".brand-logo").show();
+      }
+
+$(window).on('resize', function(){
+      var win = $(this);
+      if (win.width() > 992) { 
+      $(".brand-logo").hide();
+      $('.brand-logo').addClass('right');
+
+      }
+    else
+    {
+        $('.brand-logo').removeClass('right');
+        $(".brand-logo").show();
+    }
+});
+
+//Closes the sidenav once the user clicks on an item or in the blank space
+$("#mobile-demo").on("click", function styleChange(){
+	$("#mobile-demo").css({
+		"transform": "translateX(-105%)"
+	});
+});
+//Opens it back up once the hamburger is clicked
+$("#hamburger").on("click", function styleReset(){
+	$("#mobile-demo").css({
+		"transform": "translateX(0%)"
+	});
+});
+});
+
+-------END ORIGINAL JS.......
